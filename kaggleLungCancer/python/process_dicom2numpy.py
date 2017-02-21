@@ -113,7 +113,7 @@ def main():
 
     dataDict= { 'imageData': imageData,
                 'labels': y[0:nFiles] }
-    pkl.dump(dataDict,gzip.open(outPath + '/' + 'processed.pkl.gz','wb'))
+    pkl.dump(dataDict,open(outPath + '/' + 'processed.pkl','wb'))
 
 #    plt.imshow(pix_padded[15], cmap=plt.cm.gray)
 #    plt.show()
